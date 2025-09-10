@@ -14,7 +14,6 @@ import { cartItemSchema, cartSchema } from "@/lib/schemas";
 //NOTE: this file must be a server component! (cant use metadata) #tired
 
 export default function CheckoutPage() {
-  throw new Error("this is error");
   const items = useCartStore((state) => state.items);
   const clearCart = useCartStore((state) => state.clearCart);
   //BUG: i did not used this as map as i have to alter the store codebase, pass! next project!
